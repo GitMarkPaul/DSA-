@@ -1,3 +1,10 @@
+/*
+SOURCE CODE: Sum-Min-Max
+AUTHOR NAME: Mark Paul A. Cañeda
+GITHUB URL: github.com
+LAST UPDATE: September 21, 2016
+*/
+
 package sum.min.max.java;
 
 public class SumMinMaxJava {
