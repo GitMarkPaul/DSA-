@@ -12,8 +12,8 @@ DATE UPDATE: August 2, 2016
         
         
     int i,
-        first,
-        last,
+        left,
+        right,
         middle,
         a,
         search, 
@@ -34,25 +34,25 @@ DATE UPDATE: August 2, 2016
     System.out.println("Enter value to find");
            search = markpaul.nextInt();
  
-    first  = 0;
-    last   = a - 1;
+    left  = 0;
+    right   = a - 1;
     middle = (first + last)/2;
  
-    while( first <= last )
+    while( left <= right )
     {
       if ( array[middle] < search )
-           first = middle + 1;    
+           left = middle + 1;    
       else if ( array[middle] == search ) 
       {
         System.out.println(search + " found at location " + (middle + 1) + ".");
         break;
       }
       else
-           last = middle - 1;
+           left = middle - 1;
  
-           middle = (first + last)/2;
+           middle = (left + right)/2;
    }
-   if ( first > last )
+   if ( left > right )
            System.out.println(search + " is not present in the list.\n");
   }
 }
